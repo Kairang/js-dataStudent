@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.form-input {
+    padding: 30px;
+    background: #232833;
+}
+.table-data {
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+.form-input div, .modal-content div {
+    padding: 10px;
+}
+label {
+    display: inline-block;
+    color: #fff;
+    min-width: 85px;
+}
+
+input {
+    min-width: 300px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.btn {
+    min-width: 80px;
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.form-input #add {
+    margin-left: 85px;
+}
+
+.btn:hover {
+    background-color: rgb(174, 174, 174);
+}
+
+.fa-solid {
+    margin-left: 25px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    height: 25px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    min-width: 20px;
+    padding: 5px;
+}
+
+td span input {
+    margin-left: 10px;
+    padding: 0 5px;
+}
+
+tr:nth-child(even) {
+    background: #00CCCC
+}
+.modal-content {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    transition: .5s;
+}
+#pagination {
+    margin-top: 20px;
+}
